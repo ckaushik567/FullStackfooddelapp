@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container{
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     width: 100vw;
+     height: 100vh;
+     align-items: center;
+     background-color:rgba(0, 0, 0, 70%);
+}
+.modalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     gap: 20px;
+     background-color: white;
+     border-radius: 8px;
+     
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+    gap: 20px;
+    padding: 10px;
+}
+.modalInput input{
+    border: 2px solid #afafaf;
+    padding: 8px 15px;
+    width: 25vw;
+    border-radius: 7px;
+}
+.modalInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     gap: 10px;
+}
+.modalFooter{
+    width: 38vw;
+    background-color: rgba(252, 138, 6, 1);
+    box-shadow: 4px 4px 40.8px 0px rgba(0, 0, 0, 0.25);
+
+}
+.modalFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.removeBtn button{
+    background-color: rgba(102, 55, 0, 1);
+    border: 1px solid rgba(102, 55, 0, 1);
+    padding: 10px 14px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.saveBtn button{
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px 17px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.saveBtn p{
+    color: white;
+}
+.saveBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}

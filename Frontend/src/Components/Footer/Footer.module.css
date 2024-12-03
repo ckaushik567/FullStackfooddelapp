@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    background-color: rgba(217, 217, 217, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+     width: 100vw;
+     margin: auto;     
+}
+.subContainer {
+    display: flex;
+    justify-content: space-between;
+     
+    width: 95vw;
+    margin: auto;
+    height: 30vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    width: 19.4vw;
+}
+
+.logos img {
+    width: 230px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+ 
+
+/* .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.links ul li{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+}
+
+.pages ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+.pages ul li{
+    color: rgba(0, 0, 0, 1);
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 20px;
+     
+}
+
+li {
+    list-style-type: none;
+}
+
+.mediaIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.mediaIcons img {
+    width:30px;
+}
+
+.logos span {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 1);
+}
+#playStoreImg{
+    width: 22vw;
+}
+.inputSection input{
+    width: 20vw;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    opacity: 60%;
+}
+.inputSection input::placeholder{
+    color: rgba(0, 0, 0, 0.6);
+}
+.inputSection button{
+    padding: 12px 20px;
+    background-color: rgba(252, 138, 6, 1);
+    color: white;
+    border: 1px solid rgba(252, 138, 6, 1);
+    border-radius: 25px;
+     position: absolute;
+     left: 640px;
+}
+.icons h4{
+    font-size: 14px;
+}
+.icons span{
+    font-size: 10px;
+}
+h4{
+    font-size: 14px;
+}
+.subFotterContainer{
+    background-color: rgba(3, 8, 31, 1);
+     width: 100vw;
+     margin: auto;
+    color: rgba(255, 255, 255, 1);
+}
+.subFooterMainContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.conditions ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.conditions ul li{
+    font-size: 12px;
+}
+.copyrights p{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* For Mobile View */
+
+@media (max-width: 345px) {
+    .subContainer{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        height: 125vh;
+         
+    }
+    .logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+        margin: auto;
+    }
+    #playStoreImg{
+        width: 230px;
+    }
+    .logos span{
+        text-align: center;
+    }
+    .icons{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .inputSection{
+        display: flex;
+    }
+    .inputSection input{
+        width: 75vw;
+    }
+    .icons h4{
+        text-align: center;
+    }
+    .inputSection button{
+        position: absolute;
+        left: 210px;
+    }
+    .pages{
+        width: 95vw;
+        margin-top: 40px;
+    }
+    .links{
+        width: 95vw;
+        margin-top: 40px;
+    }
+    .subFotterContainer{
+        height: 10vh;
+        text-align: center;
+    }
+    .subFooterMainContainer{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyrights{
+        width: 95vw;
+    }
+    .conditions{
+        display: none;
+    }
+    
+}

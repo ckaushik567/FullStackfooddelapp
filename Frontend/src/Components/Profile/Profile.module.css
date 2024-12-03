@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container{
+    font-family: "Poppins";
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    gap: 20px;
+    width: 92vw;
+    margin: auto;
+}
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.creditCardNum{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.creditCardNum p{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 1);
+    opacity: 50%;
+}
+.creditCardNum h4{
+    font-size: 16px;
+}
+.EditBtn button{
+    background-color: rgba(252, 138, 6, 1);
+    padding: 7px 25px;
+    border-radius: 6px;
+    border: 1px solid rgba(252, 138, 6, 1);
+    color: white;
+    cursor: pointer;
+}
+.profileImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.profileImg img{
+    width: 60px;
+}
+.firstInputSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+.firstInput{
+    display: flex;
+    flex-direction: column;
+}
+.secondInputSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+.inputsContainer{
+    display: flex;
+    justify-content: space-between;
+    /* width: 70vw; */
+    align-items: center;
+}
+.inputsContainer1{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    align-items: center;
+}
+.firstInput input{
+    width: 45vw;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5)
+}
+.savedCards{
+    /* border: 0.5px solid rgba(0, 0, 0, 0.5);
+    padding: 8px;
+     width: 20vw;
+     border-radius: 10px; */
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     gap: 20px;
+}
+.card1{
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    padding: 8px;
+     width: 20vw;
+     height: 10vh;
+     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addCard{
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px;
+    gap: 20px;
+    width: 18vw;
+     border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+.addCard p{
+    font-size: 20px;
+    background-color: rgba(252, 138, 6, 10%);
+    color: rgba(252, 138, 6, 1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card1 img{
+    cursor: pointer;
+}
+#credit{
+    border: 1.77px solid rgb(232, 212, 189);
+    padding: 7px;
+    border-radius: 20px;
+    background-color: rgb(255, 243, 229);
+     
+}
+.savedContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.savedContainer h1{
+    font-size: 20px;
+}
+label{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+}
+.firstInput{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

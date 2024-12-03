@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 95vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 5px;
+    height: 10vh;
+}
+
+.inputFields span {
+    font-size: 12px;
+    color: red;
+}
+
+.imageSection {
+    height: 100%;
+    width: 50vw;
+}
+
+.imageSection img {
+    width: 50vw;
+    height: 100vh;
+}
+
+.formSection img {
+    width: 150px;
+}
+
+.btnSection button {
+    width: 25vw;
+    background: rgba(252, 138, 6, 1);
+    border: 1px solid rgba(252, 138, 6, 1);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btnSection {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btnSection span {
+    font-size: 14px;
+}
+
+.btnSection p {
+    font-size: 13px;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 25vw;
+    height: 50vh;
+    margin-top: 20px;
+}
+
+.inputSection input {
+    width: 25vw;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 10px 15px;
+    border-radius: 17px;
+    outline: none;
+}
+
+.signinHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 25vw;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.signinHeading p {
+    color: rgba(49, 57, 87, 1);
+    font-size: 14px;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+.link{
+    color: rgba(252, 138, 6, 1);
+    list-style-type: none;
+    text-decoration: none;
+}
+#text{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* Css for Mobiel View */
+
+
+
+@media (max-width: 345px) {
+    .container {
+        font-family: 'Poppins';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+        height: 100vh;
+        margin: auto;
+    }
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+    }
+    .inputFields{
+        width: 95vw;
+         
+    }
+    .signinHeading{
+        width: 95vw;
+    }
+    .formSection{
+        width: 95vw;
+    }
+    .inputSection{
+        width: 95vw;
+    }
+    .inputFields input{
+        width: 100%;
+    }
+    .btnSection{
+        width: 95vw;
+    }
+    .btnSection button{
+        width: 100%;
+    } 
+}

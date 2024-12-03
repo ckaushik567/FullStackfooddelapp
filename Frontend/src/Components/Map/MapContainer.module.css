@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #map {
+    position: relative;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background-color: #001f3f;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-container {
+    flex: 1;
+  }
+  

@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin: auto;
+    gap: 50px;
+    background: linear-gradient(180deg, #EEEEEE 0%, #E0E1DC 100%);
+    border: 1px solid linear-gradient(180deg, #EEEEEE 0%, #E0E1DC 100%);
+    height: 76.4vh;
+
+}
+
+.imgSection img {
+    width: 600px;
+    /* background: linear-gradient(180deg, #EEEEEE 0%, #E0E1DC 100%); */
+}
+
+.imgSection {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    left: 50px;
+    /* top: 20px; */
+    top: 1755px;
+}
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 500px;
+    /* top: 100px; */
+    top: 1870px;
+}
+
+.textSection h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.textSection h2 span {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.textSection h2 {
+    font-size: 40px;
+    background-color: rgba(3, 8, 31, 1);
+    position: relative;
+    color: white;
+    width: 60vw;
+    text-align: end;
+    right: 100px;
+    padding: 10px 60px;
+    border-radius: 40px;
+
+}
+
+.imgSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 95vw;
+    margin: 30px auto;
+}
+
+.firstImg {
+    background-image: url('../../assets/partnerImg.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.SecondImg {
+    background-image: url('../../assets/rideImg.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.questionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 95vw;
+    background-color: rgba(217, 217, 217, 1);
+    margin: auto;
+    padding: 80px 70px;
+    margin-top: -290px;
+    border-radius: 10px;
+}
+
+.questionNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+.navSect ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#borderStyle {
+    border: 1px solid rgba(252, 138, 6, 1);
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+}
+
+.navSect ul li {
+    font-size: 13px;
+}
+
+.cartSectio {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 50px 40px;
+    border-radius: 10px;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card1 {
+    background: rgba(217, 217, 217, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    height: 33vh;
+    gap: 10px;
+    width: 12vw;
+    border-radius: 10px;
+}
+
+.card1 p {
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cardsSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    gap: 30px;
+}
+
+.cardText p {
+    font-size: 12px;
+    text-align: center;
+    width: 37vw;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 20vw;
+    text-align: center;
+}
+
+.questions h4 {
+    font-weight: 700;
+}
+
+#borderStyleh4 {
+    background-color: rgba(252, 138, 6, 1);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.regisNumberContainer {
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin: auto;
+    background-color: rgba(252, 138, 6, 1);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 140px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+}
+
+.regRide {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
+
+.regRide h2 {
+    font-size: 40px;
+}
+
+.rightBorder {
+    border: 1px solid white;
+    margin-left: 50px;
+    color: rgba(217, 217, 217, 1);
+    border-width: -20px;
+}
+
+.regNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstImg button {
+    background-color: rgba(252, 138, 6, 1);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid rgba(252, 138, 6, 1);
+    margin-top: 10px;
+}
+
+.firstImg p {
+    color: rgba(252, 138, 6, 1);
+}
+
+.firstImg h4 {
+    color: white;
+    font-size: 30px;
+}
+
+.SecondImg button {
+    background-color: rgba(252, 138, 6, 1);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid rgba(252, 138, 6, 1);
+    margin-top: 10px;
+}
+
+.SecondImg p {
+    color: rgba(252, 138, 6, 1);
+}
+
+.SecondImg h4 {
+    color: white;
+    font-size: 30px;
+}
+
+/* .firstImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+} */
+.imgText {
+    margin-top: 190px;
+    margin-left: 50px;
+
+}
+
+.upprText {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    margin-left: 30px;
+    width: 15vw;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.upprText p {
+    color: black;
+}
+
+
+
+
+
+
+
+
+@media (max-width:345px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* display: flex;
+        flex-direction: column-reverse; */
+        height: 90vh;
+    }
+
+    .imgSection img {
+        width: 300px;
+        position: absolute;
+        top: -10px;
+        right: -265px;
+    }
+
+    #playImg {
+        width: 260px;
+    }
+
+    .textSection {
+        position: absolute;
+        top: 1490px;
+        left: 0px;
+        text-align: center;
+    }
+
+    .textSection img {
+        width: 10px;
+    }
+
+    .textSection h1 {
+        font-size: 15px;
+    }
+
+    .textSection h2 {
+        font-size: 15px;
+        background-color: transparent;
+        width: 95vw;
+         text-align: center;
+         position: relative;
+         left: 1px;
+    }
+
+    .textSection h2 span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .textSection p {
+        font-size: 15px;
+    }
+
+    .textSection img {
+        width: 100px
+    }
+
+    .imgSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .firstImg{
+        height: 30vh;
+    }
+    .upprText{
+        background-color: rgba(255, 255, 255, 1);
+    color: black;
+    margin-left: 10px;
+    width: 60vw;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+    .imgText {
+        margin-top: 40px;
+        margin-left: 30px;
+    
+    }
+    .imgText h4{
+        font-size: 20px;
+    }
+    .navSect{
+        display: none;
+    }
+    .navbarHead h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .cartSectio {
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+         
+    }
+    .questions {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        gap: 20px;
+         
+        width: 95vw;
+         
+        margin: auto;
+    }
+    .regisNumberContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: -100px;
+         
+    }
+    .rightBorder{
+        width: 50%;
+        margin-top: 20px;
+        text-align: center;
+        margin-right: 150px;
+    }
+    .regRide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+         
+    }
+
+
+
+}

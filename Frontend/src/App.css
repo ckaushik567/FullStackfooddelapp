@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.map-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 95vw;
+    margin: auto;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+
+  }
+   #number{
+    color: #f8c000;
+   }
+  .sidebar {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    z-index: 1000;
+    width: 340px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .sidebar h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #f8c000;
+  }
+  
+  .sidebar .highlight {
+    color: #f8c000;
+    font-weight: bold;
+  }
+  
+  .sidebar p {
+    margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .sidebar a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .custom-popup .leaflet-popup-content-wrapper {
+    background-color: white;
+    color: black; 
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: "Poppins";
+    font-size: 14px;
+    width: 15vw;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  }
+
+.custom-popup {
+  color: white; 
+  padding: 10px; 
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+  .custom-marker {
+    background: rgba(3, 8, 31, 1);
+    border-radius: 30px;
+    width: 20vw;
+      
+  }
+  
+  .custom-popup .leaflet-popup-content {
+    margin: 0;
+    text-align: start;
+    padding: 0px 15px;
+  }
+  
+  .popup-content strong {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .popup-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .leaflet-popup-tip {
+    display: none !important;
+  }
+

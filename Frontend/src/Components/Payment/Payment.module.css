@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container{
+    width: 95vw;
+    margin: auto;
+    font-family: "Poppins";
+}
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 40px;
+    
+}
+.price img{
+    width: 15px;
+}
+.addressDitails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    border: 1px solid rgba(255, 232, 206, 1);
+    padding: 10px;
+    border-radius: 30px;
+}
+.mapImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mapImage img{
+    border: 1px solid rgba(45, 55, 72, 1);
+    box-shadow: 0px 8px 20px 0px rgba(86, 88, 92, 0.12);
+    background-color: rgba(255, 232, 206, 1);
+    padding: 6px 8px;
+    border-radius: 25px;
+
+}
+.paymentMainCont{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.PaymentContainer{
+    width: 40vw;
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+hr{
+    border: 0.3px solid rgba(0, 0, 0, 1)
+}
+.proccedPaymentBtn button{
+    background-color: rgba(252, 138, 6, 1);
+    border: 1px solid rgba(252, 138, 6, 1);
+    width: 100%;
+    padding: 7px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+}
+.paymentCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    border: 1px solid rgba(255, 232, 206, 1);
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.addRessText p{
+    font-size: 15px;
+    color: rgba(131, 133, 138, 1);
+}
+.addRessText h3{
+    font-size: 14px;
+}
+.amountText p{
+    font-size: 14px;
+    color: rgba(131, 133, 138, 1);
+}

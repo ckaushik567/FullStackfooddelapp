@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container{
+    overflow: hidden;
+    font-family: "Poppins";
+}
+.prodContainer{
+    margin-top: 35px;
+}
+.foodItemContainer{
+    width: 95vw;
+    margin: 80px auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: start;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px; */
+}
+.subContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+}
+#heading{
+    color: rgba(252, 138, 6, 1);
+}
+/* .foodItemContainer{
+    width: 95vw;
+    margin: auto;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(auto,1fr);
+     justify-content: space-between;
+     align-content: center;
+} */
+.foodItemComp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.foodItemComp1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.Restourants{
+    margin-top: 70px;
+}

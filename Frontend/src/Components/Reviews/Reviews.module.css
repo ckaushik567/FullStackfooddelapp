@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container{
+    font-family: "Poppins";
+    background-color: rgba(217, 217, 217, 1);
+    height: 50vh;
+}
+.reviewHeadingSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainContainer{
+    width: 95vw;
+    margin: auto;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     padding: 20px 0px;
+}
+.leftRightbtn button{
+    background-color: rgba(252, 138, 6, 1);
+    border: 1px solid rgba(252, 138, 6, 1);
+    border-radius: 50%;
+    padding: 8px 10px;
+    margin-left: 10px;
+}
+.leftRightbtn button img{
+    width: 30px;
+}
+.profileImg{
+    display: flex;
+    justify-content:center;
+    
+    gap: 10px;
+}
+.innerBox{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: ; */
+     width: 25vw;
+}
+.reviewBox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    background-color: white;
+    width: 30vw;
+    padding: 10px 30px;
+    border-radius: 8px;
+
+}
+.line{
+    border: 1px solid rgba(252, 138, 6, 1);
+    height: 35px;
+    color: rgba(252, 138, 6, 1);
+}
+.reviewBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    gap: 20px;   
+}
+.slideIn {
+    transform: translateX(100%); /* Slide from the right */
+    opacity: 0;
+  }
+  .reviewBox:not(.slideIn) {
+    transform: translateX(0);
+    opacity: 1;
+  }
+.imgSec img{
+    width: 35px;
+}
+.profileText p{
+    font-size: 12px;
+}
+.profileText span{
+    font-size: 12px;
+}
+.ratingStar img{
+    width: 50px;
+}
+.ratingStar p{
+    font-size: 12px;
+}
+.ratingStar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+}
+.paraText p{
+    font-size: 12px;
+}
+
+.profileRatingSatar{
+    position: absolute;
+    top: 180px;
+    left: 45%;
+    right: 40%;
+}
+.profileRatingSatar img{
+    width: 90px;
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.orderDitails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainContainer{
+    border: 1px solid rgba(32, 41, 56, 1);
+    border-radius: 10px;
+    width: 50vw;
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+}
+.notes input{
+    width: 100%;
+    border: 1px solid rgba(32, 41, 56, 1);
+    padding: 8px;
+    border-radius: 20px;
+}
+.notes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.orderImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+     
+}
+.orderImage img{
+    width: 60px;
+}
+.container{
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins";
+}
+.mapImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.addressDitails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addressDitails{
+    border: 1px solid rgba(3, 8, 31, 1);
+    padding: 8px 10px;
+    border-radius: 30px;
+    width: 40vw;
+}
+.mapImage img{
+    border: 1px solid rgba(45, 55, 72, 1);
+    padding: 4px 5px;
+    border-radius: 50%;
+}
+/* .orderDitailsContaine{
+    border: 1px solid rgba(3, 8, 31, 1);
+    border-radius: 10px;
+} */
+ /* .orderDitailsContaine{ 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+ } */
+  .orderDitailsContaine h1{
+    margin-bottom: 30px;
+  }
+ .addressContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+    /* margin-top: 60px; */
+ }
+ .itemsCountContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+ }
+ .items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .subprice{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: end;
+    align-items: end;
+ }
+ .subTota p{
+    color: rgba(131, 133, 138, 1);
+    font-size: 15px;
+ }
+ .orderText p{
+    color: rgba(131, 133, 138, 1);
+    font-size: 15px;
+ }
+ .orderText h3{
+    font-size: 14px;
+ }
+ .price p{
+    font-size: 15px;
+    color: rgba(2, 134, 67, 1);
+ }
+ .price img{
+    width: 15px;
+    color: rgba(252, 138, 6, 1);
+ }
+ .notes p{
+    color: rgba(131, 133, 138, 1);
+    font-size: 15px;
+ }
+ .addRessText h3{
+    font-size: 14px;
+ }
+ .addRessText p{
+    font-size: 15px;
+    color: rgba(131, 133, 138, 1);
+ }
+ .subTota{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .subprice p{
+    font-size: 15px;
+    color: rgba(131, 133, 138, 1);
+ }
+ .items p{
+    font-size: 15px;
+    color: rgba(131, 133, 138, 1);
+ }
+ .choosePaymentBtn button{
+    background-color: rgba(252, 138, 6, 1);
+    border: 1px solid rgba(252, 138, 6, 1);
+    padding: 8px 10px;
+    width: 100%;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+ }
+
+
+.upperConatiner{
+   display: flex;
+   justify-content: space-between;
+   align-items: start;
+   gap: 40px;
+ }

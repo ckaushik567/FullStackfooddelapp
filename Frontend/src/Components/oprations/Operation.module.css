@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container{
+    font-family: 'Poppins';
+    width: 95vw;
+    box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(251, 251, 251, 1);
+    border-radius: 10px;
+    margin:40px auto;
+     height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerContainer{
+    /* width: 95vw; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    justify-items: center;
+    align-content: center;
+    gap: 100px;
+    /* justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 150px;   */
+    /* gap: 100px; */
+     
+}
+.delInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    /* padding: 0px 40px; */
+     
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+     
+}
+.operationTimings{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    background-color: rgba(3, 8, 31, 1);
+    color: white;
+    /* height: 60vh; */
+    /* width: 25vw;
+    margin-left: 25px; */
+    /* height: 60vh;
+    box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 85px; */
+    z-index: 1;  
+}
+.delInfoHeading h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.delInfoTiming{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+.contactInfo h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contText{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+/* .operationTimings{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 40vw;
+} */
+.operationTimes h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.operationTimeList{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.contText p{
+    line-height: 29px;
+    width:25vw;
+    text-align: start;
+    font-size: 14.3px;
+}
+.contNuber p{
+    font-size: 14.3px;
+}
+.contNuber p{
+    font-size: 12px;
+}
+.delInfoTiming p{
+    font-size: 14.3px;
+}
+.operationTimeList{
+    font-size: 14.3px;
+}
+.operationTimes h3 img{
+    width: 25px;
+}
+.conctInfoHeading h3 img{
+    width: 25px;
+}
+.delInfoHeading h3 img{
+    width: 25px;
+}
+.contNuber{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.contNuber h3{
+    font-size: 12px;
+}
+.contWeb{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.contWeb h3{
+    font-size: 13px;
+}
+.bgContainer{
+    background-color: rgba(3, 8, 31, 1);
+    height: 60vh;
+    width: 30vw;
+    position: absolute;
+    right:25.8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

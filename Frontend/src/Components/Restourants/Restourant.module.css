@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    padding: 20px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .restHeading h1 {
+    font-size: 2rem;
+  }
+  
+  .restImages {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .restImage {
+    flex: 1 1 calc(33.33% - 20px);
+    text-align: center;
+  }
+  
+  .restImage img {
+    max-width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .restImage p {
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgba(252, 138, 6, 1);
+     padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-top: -8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgba(255, 255, 255, 1)
+  }
+  
+
+
+/* .container{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 95vw;
+    margin: auto;
+    gap: 30px;
+}
+.restHeading{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.restImges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.restImg1 img{
+    width: 100%;
+}
+.restImg1 p{
+     background-color: rgba(252, 138, 6, 1);
+     padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-top: -8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgba(255, 255, 255, 1)
+} */
+
+@media (max-width: 345px){
+  .restHeading h1{
+    font-size: 15px;
+  }
+  .restImages{
+    overflow-x: scroll;
+  }
+  .restImage{
+    flex: 0 0 auto;
+  width: 200px;
+  border-radius: 8px;
+  }
+}

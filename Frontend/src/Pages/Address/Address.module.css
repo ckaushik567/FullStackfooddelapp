@@ -1,0 +1,13 @@
+.AddressContainer{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.addressContainer{
+    height: 100vh;
+}
+.modalContainer{
+    position: fixed;
+    z-index: 1;
+}

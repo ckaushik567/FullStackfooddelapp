@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.container{
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* height: 57.3vh; */
+    height: 70vh;
+    width: 95vw;
+    border-radius: 8px;
+}
+/* edit */
+.headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    /* top: 60px; */
+    top: 265px;
+    left: 60px;
+    width:385px;
+    gap: 20px;
+     
+}
+.inputSection button{
+    padding: 12px 20px;
+    background-color: rgba(252, 138, 6, 1);
+    color: white;
+    border: 1px solid rgba(252, 138, 6, 1);
+    border-radius: 25px;
+     position: absolute;
+     left: 200px;
+}
+.inputSection input{
+    width: 20vw;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    opacity: 60%;
+}
+/* edit here */
+.imgSection img{
+    width: 590px;
+    position: absolute;
+    left:340px;
+    /* top: 0px;  */
+    top: 213px;
+    z-index: 2;
+}
+/* edit here */
+.img1 img{
+    width: 260px;
+    position: absolute;
+    left: 720px;
+    /* top:54px; */
+    top: 293px;
+    z-index: 1;
+    
+    
+}
+/* edit here */
+.img2 img{
+    width: 480px;
+    position: absolute;
+    right: 0px;
+    /* top: 0; */
+    top: 173.4px;
+    right: 27.5px;
+     
+}
+/* .headings{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 31vw;
+} */
+span{
+    color: rgba(252, 138, 6, 1);
+}
+.headings h2{
+    font-size: 39px;
+}
+/* edit here */
+.box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width:20vw;
+    position: absolute;
+    right: 170px;
+    /* top: 40px; */
+    top: 270px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;   
+}
+.box2{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width:20vw;
+    position: absolute;
+    right: 120px;
+    /* top: 160px; */
+    top: 380px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;   
+}
+.box3{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width:20vw;
+    position: absolute;
+    right: 150px;
+    /* top: 280px; */
+    top: 500px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;   
+}
+
+#para{
+    color: rgba(0, 0, 0, 0.8);
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.logo img{
+    width: 30px;
+}
+.logo p{
+     font-size: 10px;
+}
+.message{
+    color: rgb(127, 120, 120);
+}
+.numberImg{
+    position: absolute;
+    right: 190px;
+    top: 220px;
+}
+.numberImg1{
+    position: absolute;
+    right: 130px;
+    top: 332px;
+}
+.numberImg2{
+    position: absolute;
+    right: 168px;
+    top: 454px;
+}
+
+
+
+
+
+
+
+@media (max-width: 345px) {
+    .mobileConatiner{
+        width: 95vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(3, 8, 31, 1);
+        color: white;
+        padding: 30px 10px;
+        text-align: center;
+        gap: 20px;
+        border-radius: 10px;
+        font-family: "Poppins";
+    }
+    .mobileConatiner p{
+        font-size: 12px;
+    }
+     
+    #highlited{
+        color: rgba(252, 138, 6, 1);
+        margin-top: -20px;
+    }
+    .mobileConatiner h1{
+        font-size: 25px;
+    }
+    .mobileConatiner input{
+        padding: 15px;
+        border-radius: 30px;
+        border: 1px solid white;
+        width: 120%;
+
+    }
+    .mobileInput{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileInput button{
+        background-color: rgba(252, 138, 6, 1);
+        border-radius: 30px;
+    }
+    .mobileConatiner button{
+        padding: 5px;
+        border-radius: 30px;
+        border: 1px solid rgba(252, 138, 6, 1);
+        position: absolute;
+        right: 60px;
+        top: 390px;
+        
+         
+    }
+}

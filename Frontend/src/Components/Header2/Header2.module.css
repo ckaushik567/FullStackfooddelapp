@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 92vw;
+    margin: auto;
+    font-family: 'Poppins';
+    gap: 30px;
+}
+
+.dealsSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu ul li {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#borderStyle {
+    border: 1px solid rgba(252, 138, 6, 1);
+    color: rgba(252, 138, 6, 1);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.categories {
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.dishName {
+    /* background-image: url('../../assets/dish1.png'); */
+    background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%), url('../../assets/dish1.png');
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+
+    background-repeat: no-repeat;
+
+
+
+}
+
+.dishName1 {
+    background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%), url('../../assets/dish2.png');
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+
+    background-repeat: no-repeat;
+}
+
+.dishName2 {
+    background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%), url('../../assets/dish3.png');
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+
+    background-repeat: no-repeat;
+}
+
+.dishHead {
+    margin-top: 170px;
+    margin-left: 40px;
+}
+
+.dishHead p {
+    color: rgba(252, 138, 6, 1);
+}
+
+.dishHead h3 {
+    color: white;
+}
+
+.discount {
+    color: white;
+    background-color: rgba(3, 8, 31, 1);
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 320px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.dishCate {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* justify-content: center; */
+    width: 95vw;
+    gap: 30px;
+
+
+}
+
+.catHeading {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.cateImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.img1 img {
+    width: 100%;
+}
+
+.img1 {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 10px;
+}
+
+.img1 h4 {
+    padding: 0px 0px 0px 14px;
+}
+
+.img1 p {
+    padding: 0px 0px 0px 14px;
+    font-size: 10px;
+    color: rgba(252, 138, 6, 1);
+}
+
+.mobileMenu {
+    display: none;
+}
+
+
+@media (max-width: 345px) {
+    .menu {
+        display: none;
+    }
+
+    .headingSection h2 {
+        font-size: 10px;
+    }
+
+    .dealsSection {
+        width: 95vw;
+        display: flex;
+    }
+
+    .mobileMenu {
+        display: flex;
+
+    }
+
+    .mobileMenu select {
+        background-color: transparent;
+        padding: 8px;
+        border-radius: 15px;
+        border: 1px solid black;
+
+    }
+
+    .select .arrow {
+        float: left;
+    }
+
+    .categories {
+        width: 95vw;
+    }
+
+    .categories {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .categories::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .categories::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+
+    .categories::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .dishName,
+    .dishName1,
+    .dishName2 {
+        flex: 0 0 auto;
+        width: 100px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        height: 200px;
+    }
+
+
+
+
+
+
+    .categories {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .dishName,
+    .dishName1,
+    .dishName2 {
+        flex: 0 0 auto;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .categories {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px;
+        white-space: nowrap;
+        overflow-y: auto
+    }
+
+    .dishName,
+    .dishName1,
+    .dishName2 {
+        flex: 0 0 auto;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        height: 150px;
+
+        background-position: 100%;
+    }
+
+    .discount {
+        margin-left: 100px;
+        width: 15vw;
+        margin-top: -10px;
+
+    }
+
+    .dishHead {
+        margin-top: 200px;
+        margin-left: 0px;
+        text-align: start;
+    }
+
+    .dishHead p {
+        color: rgba(252, 138, 6, 1);
+        font-size: 12px;
+    }
+
+    .dishHead h3 {
+        color: white;
+        font-size: 15px;
+        color: black;
+    }
+
+    .catHeading h2 {
+        font-size: 12px;
+    }
+
+    .cateImg{
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+    }
+    .img1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img1 img {
+        width: 100%;
+        height: auto; 
+        object-fit: cover;
+      }
+      .img1 {
+        flex: 0 0 auto;
+        width: 200px; 
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+         
+      }
+
+
+
+}
