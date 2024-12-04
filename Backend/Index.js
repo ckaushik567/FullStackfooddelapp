@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 const corsOptions = {
-    origin: "http://localhost:5000",
+    origin: "https://fullstackfooddelapp-9.onrender.com/",
     credentials: true,
   };
 
