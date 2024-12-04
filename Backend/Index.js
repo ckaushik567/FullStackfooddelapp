@@ -10,7 +10,10 @@ const address = require('./Routes/AddressRoutes/AddressRouter');
 const card = require('./Routes/CardRoutes/CardRouter');
 const reviews = require('./Routes/ReviewsRoutes/ReviewsRouter');
 const rest = require('./Routes/RestRoutes/RestRouter');
-const category = require('./Routes/CategoryRoutes/CategoryRouter')
+const category = require('./Routes/CategoryRoutes/CategoryRouter');
+require('dotenv').config();
+
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -28,6 +31,6 @@ app.use('/',rest);
 app.use('/',category)
 
 
-app.listen(3000,()=>{
-    console.log('server is listning at port 3000')
+app.listen(PORT,()=>{
+    console.log(`server is listning at port ${PORT}`)
 })
