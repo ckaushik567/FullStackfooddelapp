@@ -7,7 +7,7 @@ import logo from '../../assets/LOGO 1.png';
 import one from '../../assets/1.png';
 import two from '../../assets/2.png';
 import three from '../../assets/3.png';
-import nextPageBtn from '../../assets/Next Page.png'
+import nextPageBtn from '../../assets/Nextpage.png'
 
 function Header() {
     let windowWidth = window.innerWidth;
