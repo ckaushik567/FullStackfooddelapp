@@ -4,6 +4,7 @@ import logo from '../../assets/LOGO 1.png';
 import group8 from '../../assets/Group 8.png';
 import {  Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../Context/StoreContext';
+import { toast } from "react-toastify";
 
 function Signin() {
     const navigate = useNavigate();
@@ -33,6 +34,10 @@ function Signin() {
         if(res.ok){
             setToken(data.token);
             localStorage.setItem('token',data.token);
+            toast.success("Login Successful!", { position: "top-right" })
+        }
+        else{
+            toast.error("Login Failed. Please try again.", { position: "top-right" });
         }
         let error = {};
         const chars = /[a-zA-Z]/;

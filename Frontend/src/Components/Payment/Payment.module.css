@@ -11,6 +11,14 @@
     margin-top: 40px;
     
 }
+.container h1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container h1 i{
+    cursor: pointer;
+}
 .price img{
     width: 15px;
 }

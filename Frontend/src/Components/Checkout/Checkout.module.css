@@ -76,6 +76,12 @@
  } */
   .orderDitailsContaine h1{
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .orderDitailsContaine h1 i{
+   cursor: pointer;
   }
  .addressContainer{
     display: flex;

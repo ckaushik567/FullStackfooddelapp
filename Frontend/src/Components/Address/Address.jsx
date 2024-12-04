@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import AddressCss from './Address.module.css';
 import { StoreContext } from '../Context/StoreContext';
+import { useNavigate } from 'react-router-dom';
 
 function Address() {
     const { handleOnAddress,handleOnAddress1 } = useContext(StoreContext);
     const {addressData, setAddressData} = useContext(StoreContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const addressData = async () => {
@@ -40,9 +42,13 @@ function Address() {
         }
     }
 
+    function handleOnBack(){
+        navigate('/checkoutpage')
+    }
+
     return (
         <div className={AddressCss.container}>
-            <h1><img src="" /> Your Addresses</h1>
+            <h1> <i onClick={handleOnBack} class="fa-solid fa-arrow-left"></i> Your Addresses</h1>
             <div className={AddressCss.addressBoxContainer}>
                 <div className={AddressCss.addBox}>
                     <p onClick={() => handleOnAddress()}>+</p>

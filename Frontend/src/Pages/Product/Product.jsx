@@ -11,15 +11,16 @@ import Cart from '../../Components/Cart/Cart';
 import axios from "axios";
 import { StoreContext } from '../../Components/Context/StoreContext';
 import MapContainers from '../../Components/Map/MapContainers';
+import { toast } from 'react-toastify';
 
 function Product() {
 
    // const [foodDatas,setFoodDatas] = useState([]);
-   const {foodDatas,setFoodDatas} = useContext(StoreContext)
+   const { foodDatas, setFoodDatas } = useContext(StoreContext)
    // const [cartItem, setCartItems] = useState({});
 
-   const {cartItem,setCartItems} = useContext(StoreContext);
-   const {cart,setCart} = useContext(StoreContext);
+   const { cartItem, setCartItems } = useContext(StoreContext);
+   const { cart, setCart } = useContext(StoreContext);
    const [foods, setFoods] = useState({
       Burgers: [],
       Fries: [],
@@ -60,23 +61,27 @@ function Product() {
       };
       fetchData();
    }, []);
-      const addToCart = (itemId) => {
-         if(!cartItem[itemId]) {
-         setCartItems((prev)=>({...prev,[itemId]:1}));
-         }
-         else{
-         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))}
-     }
-     const getTotalAmount = () =>{
+   const addToCart = (itemId) => {
+      if (!cartItem[itemId]) {
+         setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+         toast.success("Added to cart Successful!")
+      }
+      else {
+         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
+         toast.success('Added to cart Successful!')
+      };
+
+   }
+   const getTotalAmount = () => {
       let cartTotal = 0;
       for (const item in cartItem) {
-          if(cartItem[item]>0){
-              let getInfo = foodDatas.find((product)=>product.id==item);
-              cartTotal+=getInfo.Price*cartItem[item]
-          }
+         if (cartItem[item] > 0) {
+            let getInfo = foodDatas.find((product) => product.id == item);
+            cartTotal += getInfo.Price * cartItem[item]
+         }
       }
       return cartTotal
-  }
+   }
    return (
       <div className={productCss.container}>
          <Navbar />
@@ -89,41 +94,41 @@ function Product() {
                <div className={productCss.firstSection}>
                   <div className={productCss.subContainer}>
                      <h2>Burgers</h2>
-                     <div className={cart?productCss.foodItemComp:productCss.foodItemComp1}>
+                     <div className={cart ? productCss.foodItemComp : productCss.foodItemComp1}>
                         {foods.Burgers.map((foodData) => {
-                           return <FoodItem addToCart={()=>addToCart(foodData.id)} foodName={foodData.FoodName} Description={foodData.Description} Price={foodData.Price} image={foodData.image} />
+                           return <FoodItem addToCart={() => addToCart(foodData.id)} foodName={foodData.FoodName} Description={foodData.Description} Price={foodData.Price} image={foodData.image} />
                         })}
                      </div>
                   </div>
                   <div className={productCss.subContainer}>
                      <h2 id={productCss.heading}>Fries</h2>
-                     <div className={cart?productCss.foodItemComp:productCss.foodItemComp1}>
+                     <div className={cart ? productCss.foodItemComp : productCss.foodItemComp1}>
                         {foods.Fries.map((foodData) => {
-                           return <FoodItem addToCart={()=>addToCart(foodData.id)} foodName={foodData.FoodName} Description={foodData.Description} Price={foodData.Price} image={foodData.image} />
+                           return <FoodItem addToCart={() => addToCart(foodData.id)} foodName={foodData.FoodName} Description={foodData.Description} Price={foodData.Price} image={foodData.image} />
                         })}
 
                      </div>
                   </div>
                   <div className={productCss.subContainer}>
                      <h2 id={productCss.heading}>Cold Drinks</h2>
-                     <div className={cart?productCss.foodItemComp:productCss.foodItemComp1}>
+                     <div className={cart ? productCss.foodItemComp : productCss.foodItemComp1}>
                         {foods.ColdDrinks.map((foodData) => {
-                           return <FoodItem addToCart={()=>addToCart(foodData.id)} foodName={foodData.FoodName} Description={foodData.Description} Price={foodData.Price} image={foodData.image} />
+                           return <FoodItem addToCart={() => addToCart(foodData.id)} foodName={foodData.FoodName} Description={foodData.Description} Price={foodData.Price} image={foodData.image} />
                         })}
                      </div>
                   </div>
                </div>
-               {cart?
-               <div className={productCss.container1}>
-                  <Cart foodDatas={foodDatas} cartItem={cartItem} foods={foods} getTotalAmount={getTotalAmount} />
-               </div>:""}
+               {cart ?
+                  <div className={productCss.container1}>
+                     <Cart foodDatas={foodDatas} cartItem={cartItem} foods={foods} getTotalAmount={getTotalAmount} />
+                  </div> : ""}
             </div>
          </div>
          <Operation />
-         <MapContainers/>
+         <MapContainers />
          <Reviews />
          <div className={productCss.Restourants}>
-         <Restourants />
+            <Restourants />
          </div>
          <Footer />
       </div>

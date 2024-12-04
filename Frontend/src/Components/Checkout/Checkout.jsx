@@ -20,10 +20,14 @@ function Checkout() {
         navigate('/address')
     }
 
+    function handleOnBack(){
+        navigate('/product')
+    }
+
     return (
         <div className={checkoutCss.container}>
             <div className={checkoutCss.orderDitailsContaine}>
-                <h1><img src="" />Your Order Details</h1>
+                <h1><i onClick={handleOnBack} class="fa-solid fa-arrow-left"></i> Your Order Details</h1>
                 <div className={checkoutCss.upperConatiner}>
                     <div className={checkoutCss.mainContainer}>
                         {foodDatas.map((item) => {

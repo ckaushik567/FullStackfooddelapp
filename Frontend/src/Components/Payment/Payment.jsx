@@ -14,9 +14,13 @@ function Payment() {
         navigate('/orderSuccessfull')
     }
 
+    function handleOnBack(){
+        navigate('/checkoutpage');
+    }
+
     return (
         <div className={paymentCss.container}>
-            <h1>Choose and Pay</h1>
+            <h1><i onClick={handleOnBack} class="fa-solid fa-arrow-left"></i> Choose and Pay</h1>
             <div className={paymentCss.mainContainer}>
                 <div className={paymentCss.upperContainer}>
                     <div className={paymentCss.addressDitails}>

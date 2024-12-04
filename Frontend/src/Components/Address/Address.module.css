@@ -72,6 +72,14 @@
 .address p{
     font-size: 17px;
 }
+.container h1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container h1 i{
+    cursor: pointer;
+}
 .btnSection{
     display: flex;
     gap: 10px;
