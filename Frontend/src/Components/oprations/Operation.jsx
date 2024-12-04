@@ -1,7 +1,7 @@
 import React from 'react';
 import OperationCss from './Operation.module.css';
 import trakingImg from '../../assets/Tracking.png';
-import idLogo from '../../assets/IDLogo.png';
+import idLogo from '../../assets/IDlogo.png';
 import clock from '../../assets/operationalClock.png'
 
 function Operation() {
