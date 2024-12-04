@@ -20,11 +20,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
-const corsOptions = {
-    origin: "http://localhost:5000",
-    credentials: true,
-  };
-
 app.use('/', users);
 app.use('/',foodItem);
 app.use('/', profile);

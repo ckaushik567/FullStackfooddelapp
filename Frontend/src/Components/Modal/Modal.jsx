@@ -24,8 +24,8 @@ function Modal() {
 
         const method = isUpadteCard ? 'PUT' : 'POST';
         const url = isUpadteCard
-            ? `http://localhost:3000/card/${editCardId}`  // Use the ID for PUT (update)
-            : 'http://localhost:3000/card';
+            ? `https://fullstackfooddelapp-9.onrender.com/card/${editCardId}`  // Use the ID for PUT (update)
+            : 'https://fullstackfooddelapp-9.onrender.com/card';
 
         const res = await fetch(url, {
             method: method,

@@ -15,7 +15,7 @@ function FoodItem({foodName,Description,Price,addToCart={addToCart}, image}) {
                 <h4>₹ {Price}</h4>
             </div>
             <div className={foodItemCss.foodImage}>
-                <img src={`http://localhost:3000/images/${image}`} />
+                <img src={`https://fullstackfooddelapp-9.onrender.com/images/${image}`} />
                  
             </div>
             <div className={foodItemCss.foodItemAddBtn}>

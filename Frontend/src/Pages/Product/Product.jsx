@@ -30,7 +30,7 @@ function Product() {
    useEffect(() => {
       const fetchData = async () => {
          try {
-            const response = await axios.get("http://localhost:3000/foodItems"); // Replace with your API URL
+            const response = await axios.get("https://fullstackfooddelapp-9.onrender.com/foodItems"); // Replace with your API URL
             const foodData = response.data;
             setFoodDatas(foodData.foodItemData);
 

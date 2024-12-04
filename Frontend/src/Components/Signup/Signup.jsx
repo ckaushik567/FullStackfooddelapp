@@ -24,7 +24,7 @@ function Signup() {
             PhoneNumber: "",
             Password: ""
         })
-        const res = await fetch('http://localhost:3000/signup', {
+        const res = await fetch('https://fullstackfooddelapp-9.onrender.com/signup', {
             method: 'POST',
             body: JSON.stringify(inputData),
             headers: {

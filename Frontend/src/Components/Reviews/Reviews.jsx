@@ -10,7 +10,7 @@ function Reviews() {
   const [reviews, setReviews] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = 3;
-  const apiEndpoint = 'http://localhost:3000/reviewsData';
+  const apiEndpoint = 'https://fullstackfooddelapp-9.onrender.com/reviewsData';
 
   useEffect(() => {
     const fetchReviews = async () => {
@@ -67,7 +67,7 @@ function Reviews() {
               <div className={reviewsCss.innerBox}>
                 <div className={reviewsCss.profileImg}>
                   <div className={reviewsCss.imgSec}>
-                    <img src={`http://localhost:3000/images/${item.image}`} alt="Profile" />
+                    <img src={`https://fullstackfooddelapp-9.onrender.com/images/${item.image}`} alt="Profile" />
                   </div>
                   <div className={reviewsCss.line}></div>
                   <div className={reviewsCss.profileText}>

@@ -15,7 +15,7 @@ function Header2() {
     useEffect(() => {
         const fetchFoodData = async () => {
             try {
-                const response = await fetch('http://localhost:3000/categoryData');  // Replace with your actual API endpoint
+                const response = await fetch('https://fullstackfooddelapp-9.onrender.com/categoryData');  // Replace with your actual API endpoint
                 const data = await response.json();
                 setFoodData(data.categoryDatas);
             } catch (error) {
@@ -86,7 +86,7 @@ function Header2() {
                 <div className={header2Css.cateImg}>
                     {foodData.map((item, index) => (
                         <div key={index} className={header2Css.img1}>
-                            <img src={`http://localhost:3000/images/${item.image}`} alt={item.name} />
+                            <img src={`https://fullstackfooddelapp-9.onrender.com/images/${item.image}`} alt={item.name} />
                             <h4>{item.Name}</h4>
                             <p>{item.restName}</p>
                         </div>

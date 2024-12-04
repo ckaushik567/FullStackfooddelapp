@@ -25,8 +25,8 @@ function Addressmodal() {
 
     const method = isUpadte ? 'PUT' : 'POST';
     const url = isUpadte
-      ? `http://localhost:3000/address/${editId}`  // Use the ID for PUT (update)
-      : 'http://localhost:3000/address';
+      ? `https://fullstackfooddelapp-9.onrender.com/${editId}`  // Use the ID for PUT (update)
+      : 'https://fullstackfooddelapp-9.onrender.com/address';
 
     const res = await fetch(url, {
       method: method,

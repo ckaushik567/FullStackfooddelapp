@@ -21,7 +21,7 @@ function Profile() {
 
     useEffect(() => {
         const fetchCardData = async () => {
-            const res = await fetch('http://localhost:3000/cardData', {
+            const res = await fetch('https://fullstackfooddelapp-9.onrender.com/cardData', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ function Profile() {
 
     useEffect(() => {
         const fetchProfileData = async () => {
-            const res = await fetch('http://localhost:3000/profileData', {
+            const res = await fetch('https://fullstackfooddelapp-9.onrender.com/profileData', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -71,8 +71,8 @@ function Profile() {
         setProfileData(false);
         try {
             const endpoint = profileId
-                ? `http://localhost:3000/profile/${profileId}`
-                : 'http://localhost:3000/profile';
+                ? `https://fullstackfooddelapp-9.onrender.com/profile/${profileId}`
+                : 'https://fullstackfooddelapp-9.onrender.com/profile';
             const method = profileId ? 'PUT' : 'POST';
 
             const res = await fetch(endpoint, {

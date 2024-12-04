@@ -31,7 +31,7 @@ function Checkout() {
                                 return <>
                                     <div className={checkoutCss.orderDitails}>
                                         <div className={checkoutCss.orderImage}>
-                                            <img src={`http://localhost:3000/images/${item.image}`} />
+                                            <img src={`https://fullstackfooddelapp-9.onrender.com/images/${item.image}`} />
                                             <div className={checkoutCss.orderText}>
                                                 <h3>{item.FoodName}</h3>
                                                 <p>{cartItem[item.id]}x item</p>

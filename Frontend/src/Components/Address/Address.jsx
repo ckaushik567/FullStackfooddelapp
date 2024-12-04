@@ -8,7 +8,7 @@ function Address() {
 
     useEffect(() => {
         const addressData = async () => {
-            const res = await fetch('http://localhost:3000/addressData', {
+            const res = await fetch('https://fullstackfooddelapp-9.onrender.com/addressData', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ function Address() {
 
     async function handleOnRemove(id) {
         try {
-            const res = await fetch(`http://localhost:3000/address/${id}`, {
+            const res = await fetch(`https://fullstackfooddelapp-9.onrender.com/${id}`, {
                 method: "DELETE",
             });
             if (res.ok) {

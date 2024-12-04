@@ -13,7 +13,7 @@ function Restourants() {
   useEffect(() => {
     const fetchRestaurants = async () => {
       try {
-        const response = await fetch('http://localhost:3000/restData');
+        const response = await fetch('https://fullstackfooddelapp-9.onrender.com/restData');
         const data = await response.json();
         setRestaurants(data.restDatas);
         setLoading(false);
@@ -42,7 +42,7 @@ function Restourants() {
       <div className={restourantCss.restImages}>
         {restaurants.map((restaurant) => (
           <div key={restaurant.id} className={restourantCss.restImage}>
-            <img src={`http://localhost:3000/images/${restaurant.image}`} alt={restaurant.Name} />
+            <img src={`https://fullstackfooddelapp-9.onrender.com/images/${restaurant.image}`} alt={restaurant.Name} />
             <p onClick={(e) => handleRestaurantClick(e, restaurant.id)}>
               {restaurant.Name}
             </p>
